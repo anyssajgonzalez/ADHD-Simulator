@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play ADHD Simulator.</tw-noscript></noscript></tw-story>
-<tw-storydata name="ADHD Simulator" startnode="1" creator="Twine" creator-version="2.5.1" format="Harlowe" format-version="3.3.3" ifid="95FDBF55-F105-4BB2-AACF-AD224D634399" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+<tw-storydata name="ADHD Simulator" startnode="14" creator="Twine" creator-version="2.5.1" format="Harlowe" format-version="3.3.3" ifid="95FDBF55-F105-4BB2-AACF-AD224D634399" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
 
 tw-story[tags~="background"] { 
   background-image: url("https://i.ibb.co/pP2Sm4F/adhdtwinebackground.png"); 
@@ -27,7 +27,7 @@ body, tw-story {
 	font-family: 'Noto Serif Telugu', serif;
 }
 
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="work" color="red"></tw-tag><tw-tag name="background" color="orange"></tw-tag><tw-passagedata pid="1" name="The To Do List" tags="work background" position="700,100" size="100,100">|todolist&gt;[
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="work" color="red"></tw-tag><tw-tag name="background" color="none"></tw-tag><tw-passagedata pid="1" name="The To Do List" tags="work background" position="700,100" size="100,100">|todolist&gt;[
 (if:visits is 2) [Ah! Finally. I made a little bit of progress. I think I can take a short break! ]
 (else:)[
 8:45 am.
@@ -59,11 +59,26 @@ Now that the bed is clear, I am able to finally finish making the bed. I go to t
 [[Awww, watch the video!-&gt;Awww, watch the video!]]
 [[Get back to work!-&gt;Get back to work!]]</tw-passagedata><tw-passagedata pid="5" name="Grade speeches" tags="work" position="825,300" size="100,100">[[What&#39;s next on my to do list?-&gt;The To Do List]]</tw-passagedata><tw-passagedata pid="6" name="Unpack boxes" tags="work" position="500,300" size="100,100">I walk out into the living room, ready as ever to finally finish unpacking these boxes. There are still a few boxes left that have been hanging over your head, watching you as you go through the motions of your day.
 
-Unpack a box.
-(click-replace: &quot;Unpack a box.&quot;) [[=&gt;&lt;=
-*Unpack a box.*]]
+Unpack the box.
+(click-append: &quot;box.&quot;)[
 
-</tw-passagedata><tw-passagedata pid="7" name="Gotta take care of those dishes!" tags="work" position="200,425" size="100,100">There is no way to use the sink in this condition, so I roll up my sleeves and get to work. But the dish rack is completely full.
+
+Unpack it.]
+
+(click-append: &quot;it.&quot;)[
+
+
+What are you doing? Just do it.]
+
+(click-append: &quot;Just do it.&quot;)[
+
+
+Jesus Christ, this is why you never get anything fucking done. You just sit there on the couch and stare off. At what? At your failures.]
+
+(click-append: &quot;At your failures.&quot;)[
+
+
+You moved *two months ago* and you still have bathroom stuff in the fucking living room. This is ridiculous. How in God&#39;s name could you possibly balance your work, school, and social life if you can&#39;t even UNPACK THE BOX?????????]</tw-passagedata><tw-passagedata pid="7" name="Gotta take care of those dishes!" tags="work" position="200,425" size="100,100">There is no way to use the sink in this condition, so I roll up my sleeves and get to work. But the dish rack is completely full.
 
 Empty the disk rack.
 (click-replace: &quot;Empty the disk rack.&quot;) 
@@ -97,19 +112,32 @@ Shit. I should probably get [[back to work.-&gt;The To Do List]]</tw-passagedata
 
 (click-append: &quot;...shit.&quot;)[
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXXXXXX=&quot;)[
-Chrissy: Hey! Can you take a look at this document for me real quick? I have a few open questions and you&#39;re the only one online right now.]]
+Chrissy: Hey! Can you take a look at this document for me real quick? I have a few open questions and you&#39;re the only one online right now. 
 
-Your manager NEEDS this slide deck done today!
+Your manager NEEDS this slide deck done today!]]
 (click-replace: &quot;Your manager NEEDS this slide deck done today!&quot;) 
+
+
 [I close Slack and try to refocus my eyes on the Google slide deck. But the longer I look at it, the words start to make less and less sense. I&#39;m not even sure what I&#39;m supposed to be doing anymore. ] 
-[[Review the doc.-&gt;Review the doc]]
-</tw-passagedata><tw-passagedata pid="12" name="Awww, watch the video!" tags="" position="800,425" size="100,100">&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/DO5do7Xacy4?controls=0&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+(click-append: &quot;anymore.&quot;) [ 
+[[What do I even do next? -&gt;The To Do List]] 
+[[Review the doc.-&gt;Review the doc]]]</tw-passagedata><tw-passagedata pid="12" name="Awww, watch the video!" tags="" position="800,425" size="100,100">&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/DO5do7Xacy4?controls=0&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
 
 [[Shit. I fell down my nostalgia rabbit hole again.-&gt;The To Do List]]</tw-passagedata><tw-passagedata pid="13" name="Review the doc" tags="" position="675,550" size="100,100">I click open the link from Chrissy and start to rifle through the document. Line by line, I read, leaving annotations in the comments and responding to those open questions. 
 
 Before I know it, an hour has gone by. *How has it been a fucking hour?????*
 
-[[Get back to work!-&gt;The To Do List]]</tw-passagedata></tw-storydata>
+[[Get back to work!-&gt;The To Do List]]</tw-passagedata><tw-passagedata pid="14" name="Start" tags="background" position="200,100" size="100,100">[(align:&quot;&lt;==&quot;)+(box:&quot;X=&quot;)[
+&#39;&#39;Unpacking:&#39;&#39; 
+A Twine Game
+by Anyssa Gonzalez]]
+
+
+
+
+[(align:&quot;&lt;==&quot;)+(box:&quot;X=&quot;)[
+Click [[here-&gt;The To Do List]] to begin.]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
